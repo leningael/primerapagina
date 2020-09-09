@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+body{
+  background: #ffffff;
+}
+/*Menú*/
+nav{
+  position: fixed;
+  width: 100%;
+}
+nav ul{
+  text-align: center;
+  list-style: none;
+  margin-top: 25px;
+}
+nav ul li{
+  display: inline-block;
+  padding: 20px;
+  transition: all .3s ease;
+}
+nav ul li:hover{
+  transform: scale(1.1);
+}
+nav ul li:hover a{
+  border-bottom: 1px solid #ffffff;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 24px;
+}
+/*Header*/
+header{
+  background: linear-gradient(
+    rgba(0,0,0,.6),
+    rgba(0,0,0,.2),
+    rgba(0,0,0,.6)
+    ), url('../img/header.jpg');
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.contenedor{
+  width: 80%;
+  margin: 0 auto;
+}
+.contenedor-titulo{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-titulo h1{
+  font-size: 48px;
+  color: #ffffff;
+  border: 10px double #ffffff;
+  padding: 60px 50px;
+  font-family: 'Poppins', sans-serif;
+}
+/*Principal*/
+article{
+  padding-top: 50px;
+  text-align: center;
+  border-bottom: 5px dotted gray;
+  margin-bottom: 20px;
+}
+article h3{
+  font-size: 32px;
+  padding-bottom: 30px;
+}
+article p{
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+blockquote{
+  font-size: 18px;
+}
+.tabla{
+  padding-bottom: 20px;
+}
+.cont-tabla{
+  width: 50%;
+  float: left;
+  display: inline-block;
+}
+@media (max-width: 576px){
+  .cont-tabla{
+    width: 100%;
+  }
+}
+.cont-tabla table{
+  width: 100%;
+  text-align: center;
+}
+.cont-tabla table td{
+  padding: 40px 20px;
+}
+.img-tabla{
+  width: 50%;
+  display: inline-block;
+  height: 300px;
+  overflow: hidden;
+}
+@media (max-width: 576px){
+  .img-tabla{
+    width: 100%;
+  }
+}
+.img-tabla img{
+  width: 100%;
+}
+/*Sección llamada*/
+.llamada{
+  background: url('../img/llamada.jpg');
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 50px 0;
+}
+.llamada-texto{
+  text-align: center;
+}
+.llamada-texto h3{
+  font-size: 32px;
+  color: #ffffff;
+  padding-top: 100px;
+}
+.llamada-texto button{
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  background: #ffa630;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 2px;
+  transition: all .3s ease;
+}
+.llamada-texto button:hover{
+  transform: scale(1.1);
+}
+/*Footer*/
+footer{
+  height: 50px;
+  background: #152537;
+  text-align: center;
+  padding-top: 15px;
+}
+footer p{
+  color: #ffffff;
+}
